@@ -1,21 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>DREAM LADDERS</title>
-  <style>
-    h1 {
-      color: white;
-    }
-    body {
-      font-family: Arial, sans-serif;
-      background-color: grey;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Web Page</title>
 </head>
 <body>
-  <h1>Welcome to Dream Ladders</h1>
-  <p>Where design meets destiny</p>
-  <img src="C:\Users\USER\Desktop\New folder (3)\New folder\dreamladders\dreamladders\dreamladders.jpeg.jpeg" alt="dreamladders.jpeg">
-  <img src="url" alt="alternatetext">
+  <!-- Page Header -->
+  <header>
+    <h1>Welcome to Our Accessible Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>We are committed to creating an inclusive web experience for everyone.</p>
+      <img src="team.jpg" alt="Our team working together in the office">
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Web Development</li>
+        <li>Accessibility Audits</li>
+        <li>Consulting</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="submit" aria-label="Submit the contact form">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Accessible Web Co.</p>
+  </footer>
 </body>
 </html>
