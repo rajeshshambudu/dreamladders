@@ -116,3 +116,53 @@ footer {
   background-color: #eee;
   margin-top: 60px;
 }
+
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  form {
+    width: 100%;
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+header h1 {
+  animation: fadeInDown 1s ease-out;
+}
+
+img {
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
