@@ -89,20 +89,19 @@
 
     <section id="contact">
       <h2>Contact Us</h2>
-      <form action="https://youtu.be/_KpuBZ8Cnc0?feature=shared" method="GET">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+    <form id="contact-form" action="https://formspree.io/f/yourFormID" method="POST">
+  <label for="name">Name:</label>
+  <input type="text" name="name" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+  <label for="email">Email:</label>
+  <input type="email" name="email" required>
 
-        <button type="submit" aria-label="Submit the contact form">Submit</button>
-      </form>
-<form action="https://www.instagram.com/dreamladders/" method="GET">
-  <label for="query">Enter your query:</label>
-  <input type="text" id="query" name="query" required>
-  <button type="submit">Submit</button>
+  <label for="message">Message:</label>
+  <textarea name="message" required></textarea>
+
+  <button type="submit">Send</button>
 </form>
+
 
 
 <!-- ✅ Thank You Popup -->
