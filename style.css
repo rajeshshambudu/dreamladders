@@ -166,3 +166,12 @@ img:hover {
     transform: translateY(0);
   }
 }
+
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  background-color: #005fa3;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
