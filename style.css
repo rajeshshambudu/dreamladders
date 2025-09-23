@@ -1,25 +1,28 @@
-/* Reset some default styles */
+/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body styling */
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
   color: #333;
   line-height: 1.6;
-  padding: 20px;
 }
 
 /* Header */
 header {
   background-color: #007acc;
   color: white;
-  padding: 20px;
+  padding: 40px 20px;
   text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
 /* Navigation */
@@ -27,47 +30,89 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  background-color: #eee;
-  padding: 10px;
-}
-
-nav ul li {
-  margin: 0 15px;
+  gap: 30px;
+  padding: 10px 0;
+  background-color: #005fa3;
 }
 
 nav ul li a {
+  color: white;
   text-decoration: none;
-  color: #007acc;
   font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
 }
 
 /* Main content */
 main {
-  max-width: 800px;
-  margin: 20px auto;
-  background: white;
-  padding: 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Section headings */
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #007acc;
+}
+
+/* Paragraphs and lists */
+p {
+  margin-bottom: 20px;
+}
+
+ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Images */
+img {
+  margin-bottom: 20px;
   border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Contact form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007acc;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #005fa3;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding: 10px;
-  background-color: #ddd;
-  margin-top: 40px;
-}
-
-/* Buttons */
-button {
-  background-color: #007acc;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #005fa3;
+  padding: 20px;
+  background-color: #eee;
+  margin-top: 60px;
 }
