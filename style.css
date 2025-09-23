@@ -175,3 +175,20 @@ img:hover {
   padding: 10px 0;
 }
 
+
+.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.dark-mode header,
+.dark-mode nav,
+.dark-mode footer {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+.dark-mode a {
+  color: #90caf9;
+}
+
