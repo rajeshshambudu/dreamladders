@@ -1,194 +1,247 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Affordable 2D floor plans for homes, offices, and commercial spaces. Starting at 1 rupee per sq ft.">
-<meta name="keywords" content="floor plans, architecture, interior design, Dream Ladders, 2D layout">
-<meta name="author" content="Dream Ladders">
-<meta name="robots" content="index, follow">
-
-  <title>Dream Ladders</title>
-</head>
-<body>
-  <div id="loader"></div>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <!-- Page Header -->
-  <header>
-    <button onclick="toggleDarkMode()">Dark Mode</button>
-
-    <h1>Welcome to Dream Ladders</h1>
-  
-  <nav class="sticky-nav">
-  <ul>
-    <li><a href="#about">About Us</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-
-  </header>
-  
-  <!-- Main Content -->
-  <main>
-    <section id="about">
-      <h2>About Us</h2>
-      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="slide1.png" class="d-block w-100" alt="Slide 1">
-    </div>
-     <div class="carousel-item">
-      <img src="dreamladders.jpeg.jpeg" class="d-block w-100" alt="dreamladders jpeg">
-    </div>
-    <div class="carousel-item">
-      <img src="slide2.png" class="d-block w-100" alt="Slide 2">
-    </div>
-     <div class="carousel-item">
-      <img src="slide3.png" class="d-block w-100" alt="Slide 3">
-    </div>
-     <div class="carousel-item">
-      <img src="slide4.png" class="d-block w-100" alt="Slide 4">
-    </div>
-     <div class="carousel-item">
-      <img src="slide5.png" class="d-block w-100" alt="Slide 5">
-    </div>
-     <div class="carousel-item">
-      <img src="slide6.png" class="d-block w-100" alt="Slide 6">
-    </div>
-     <div class="carousel-item">
-      <img src="slide7.png" class="d-block w-100" alt="Slide 7">
-    </div>
-    <!-- Add more slides as needed -->
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-</div>
-
-      
-      <p>At Dream Ladders, we are passionate about helping you create the perfect space, whether it's a cozy home, a modern office, or a functional commercial area. Founded with the mission to provide affordable, high-quality design solutions, we offer expert 2D floor plan services at an unbeatable price of 1 rupee per square feet. Our team of experienced architects and designers works closely with clients to ensure their ideas are translated into practical, detailed, and visually appealing floor plans.</p>
-    
-      <video width="640" height="360" controls>
-  <source src="dreamladdersvideo.mp4" type="video/mp4"  alt="Our team working together in the office">
-        <video autoplay loop muted>
-
-  <source src="video.webm" type="video/webm">
-  Your browser does not support the video tag.
-</video>
-<style>
-  .video-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
-  }
-
-  .video-container video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-</style>
-
-<div class="video-container">
-  <video controls>
-    <source src="video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
-
-        
-    </section>
-
-    <section id="services">
-      <h2>Our Services</h2>
-      <ul>
-        <li>Customized floor plans that reflect your unique needs.</li>
-        <li>Affordable pricing to fit any budget.</li>
-        <li>Fast and reliable services that delivers results on time.</li>
-        <li>Expert guidance from professionals who truly care about your project.</li>
-      </ul>
-    </section>
-
-  <!-- Include Font Awesome in your <head> -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<!-- Contact Section -->
-<section id="contact">
-  <h2>Contact Us</h2>
-
-  <p>Follow us on:</p>
-  <div class="social-links">
-    <a href="https://www.instagram.com/dreamladders" target="_blank" class="me-3">
-      <i class="fab fa-instagram fa-2x" style="color:#E1306C;"></i>
-    </a>
-    <a href="https://www.youtube.com/@dangerzone9533" target="_blank">
-      <i class="fab fa-youtube fa-2x" style="color:#FF0000;"></i>
-    </a>
-  </div>
-
-  <!-- Optional Thank You Popup -->
-  <div id="thank-you-popup" style="display:none;">
-    <p>🎉 Thank you! Your message has been sent.</p>
-  </div>
-</section>
-
-
-
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Dream Ladders </p>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-function toggleDarkMode() {
-  document.body.classList.toggle('dark-mode');
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-</script>
 
-  <script>
-window.addEventListener("load", function () {
-  document.getElementById("loader").style.display = "none";
-});
-</script>
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
 
-  <script>
-document.getElementById("contact-form").addEventListener("submit", function(e) {
-  e.preventDefault(); // Prevent default form submission
+/* Header */
+header {
+  background-color: #007acc;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
 
-  // Send form data using Fetch
-  fetch(this.action, {
-    method: "POST",
-    body: new FormData(this),
-    headers: { 'Accept': 'application/json' }
-  }).then(response => {
-    if (response.ok) {
-      document.getElementById("thank-you-popup").style.display = "block";
-      this.reset(); // Clear the form
-      setTimeout(() => {
-        document.getElementById("thank-you-popup").style.display = "none";
-      }, 3000); // Hide after 3 seconds
-    }
-  });
-});
-</script>
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px 0;
+  background-color: #005fa3;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main content */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Section headings */
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #007acc;
+}
+
+/* Paragraphs and lists */
+p {
+  margin-bottom: 20px;
+}
+
+ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Images */
+img {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Contact form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007acc;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #eee;
+  margin-top: 60px;
+}
 
 
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
 
-</body>
-</html>
+  main {
+    padding: 10px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  form {
+    width: 100%;
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+header h1 {
+  animation: fadeInDown 1s ease-out;
+}
+
+img {
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  background-color: #005fa3;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+
+.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.dark-mode header,
+.dark-mode nav,
+.dark-mode footer {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+.dark-mode a {
+  color: #90caf9;
+}
+
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#loader::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border: 5px solid #007acc;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.social-links a {
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.social-links i {
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-links a:hover i {
+  transform: scale(1.2);
+}
+
+
+.video-container video {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+.video-container {
+  margin: 0 auto;
+  max-width: 800px;
+}
