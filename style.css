@@ -237,3 +237,13 @@ img:hover {
 }
 
 
+.video-container video {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+.video-container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+
