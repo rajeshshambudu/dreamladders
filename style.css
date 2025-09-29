@@ -223,3 +223,17 @@ img:hover {
 }
 
 
+.social-links a {
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.social-links i {
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-links a:hover i {
+  transform: scale(1.2);
+}
+
+
