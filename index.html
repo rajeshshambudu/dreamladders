@@ -89,32 +89,31 @@
       </ul>
     </section>
 
-    <section id="contact">
-      <h2>Contact Us</h2>
-    <form>
-<p>Follow us on:</p>
-<a href="https://www.instagram.com/yourusername" target="_blank">
-  <img src="instagram-icon.png" alt="Instagram" style="width:32px; height:32px;">
-</a>
-<a href="https://www.youtube.com/@yourchannelname" target="_blank">
-  <img src="youtube-icon.png" alt="YouTube" style="width:32px; height:32px;">
-</a>
+  <!-- Include Font Awesome in your <head> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Contact Section -->
+<section id="contact">
+  <h2>Contact Us</h2>
+
+  <p>Follow us on:</p>
+  <div class="social-links">
+    <a href="https://www.instagram.com/yourusername" target="_blank" class="me-3">
+      <i class="fab fa-instagram fa-2x" style="color:#E1306C;"></i>
+    </a>
+    <a href="https://www.youtube.com/@yourchannelname" target="_blank">
+      <i class="fab fa-youtube fa-2x" style="color:#FF0000;"></i>
+    </a>
+  </div>
+
+  <!-- Optional Thank You Popup -->
+  <div id="thank-you-popup" style="display:none;">
+    <p>🎉 Thank you! Your message has been sent.</p>
+  </div>
+</section>
 
 
-  <label for="message">Message:</label>
-  <textarea name="message" required></textarea>
 
-  <button type="submit">Send</button>
-</form>
-
-
-
-<!-- ✅ Thank You Popup -->
-<div id="thank-you-popup" style="display:none;">
-  <p>🎉 Thank you! Your message has been sent.</p>
-</div>
-
-    </section>
   </main>
 
   <!-- Footer -->
