@@ -62,10 +62,16 @@
   });
 </script>
 
-<label class="switch">
-  <input type="checkbox" id="pageToggle">
-  <span class="slider"></span>
-</label>
+<script>
+  document.getElementById("pageToggle").addEventListener("change", function() {
+    if (this.checked) {
+      window.location.href = "materials.html"; // Switch to second page
+    } else {
+      window.location.href = "home.html"; // Switch back to home
+    }
+  });
+</script>
+
 
   <!-- Main Content -->
   <main>
