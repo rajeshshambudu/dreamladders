@@ -125,13 +125,25 @@
         <p>🎉 Thank you! Your message has been sent.</p>
       </div>
     </section>
-      <section id="quote">
-    <h2>Project Quote Calculator</h2>
-    <label>Area (sq ft): <input type="number" id="area" /></label>
-    <label>Rate per sq ft (₹): <input type="number" id="rate" /></label>
-    <button onclick="calculateQuote()">Calculate</button>
-    <p id="result"></p>
-  </section>
+
+    <div class="quote-calculator">
+  <h3>Estimate Your Project Cost</h3>
+  <label>Area (sq ft): <input type="number" id="area" /></label>
+  <label>Rate per sq ft (₹): <input type="number" id="rate" /></label>
+  <button onclick="calculateQuote()">Calculate</button>
+  <p id="quote-result"></p>
+</div>
+
+<script>
+  function calculateQuote() {
+    const area = document.getElementById('area').value;
+    const rate = document.getElementById('rate').value;
+    const total = area * rate;
+    document.getElementById('quote-result').innerText = `Estimated Cost: ₹${total.toLocaleString()}`;
+  }
+</script>
+
+     
   </main>
 
   <!-- Footer -->
