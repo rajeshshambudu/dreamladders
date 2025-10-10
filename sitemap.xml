@@ -4,5 +4,33 @@
     <loc>https://rajeshshambudu.github.io/dreamladders/</loc>
     <priority>1.0</priority>
   </url>
+
+ <url>
+    <loc>https://rajeshshambudu.github.io/dreamladders/</loc>
+    <lastmod>2025-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+<url>
+  <loc>https://rajeshshambudu.github.io/dreamladders/another-page.html</loc>
+  <lastmod>2025-10-10</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://rajeshshambudu.github.io/dreamladders/index.html</loc>
+  <lastmod>2025-10-10</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://rajeshshambudu.github.io/dreamladders/pic2.html</loc>
+  <lastmod>2025-10-10</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+  
 </urlset>
+
 
